@@ -4,6 +4,7 @@ import cx_Oracle
 import datetime
 from classes import Customer,Account,Savings,Current,Fixed_Deposit,Address
 from connection import con,cur
+from os import system
 
 def make_all_tables():
     sql = "select count(*) from user_tables where table_name = 'CUSTOMERS'"
